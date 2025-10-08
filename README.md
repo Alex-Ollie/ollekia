@@ -1,0 +1,1 @@
+This is just the async rewrite I did of the internet archive python wrapper for my own use case. It does search/download/fetch. I hadn't used python in years when I rewrote it. Feel free to use it, rewrite it, tell me how bad my python is (don't be too harsh, I get my feelings hurt easy).
