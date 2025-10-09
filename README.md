@@ -22,9 +22,11 @@ Alex
 08/Oct/2025
 
 
-ONE LAST NOTE:
-I included two file:
-search_expr.py and search_param_full.json
+## ONE LAST NOTE:<br />
+I included two files:<br />
+`search_expr.py` <br />
+*and* <br />
+`search_param_full.json`
 
 The json file is an example of a full and complex archive.org query and search_expr.py is a simple piece of code to translate it into a query to search. 
 Unfortunately I don't have the output of the translation to show. And I'm a lazy bitch right now to run it. But it did work last I tried it. If you want to automate commplex searches based on that json structure, those two files will allow you to use it. You may be able to do it with the wrapper search file. I dunno, again I'm just being a lazy bitch. I commented it a bit ago because I'd inevitably forget. I did forget. But the comments did help.
