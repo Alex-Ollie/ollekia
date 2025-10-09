@@ -5,23 +5,22 @@ It does search/download/fetch. I hadn’t used Python in years when I rewrote it
 
 Feel free to use it, rewrite it, tell me how bad my Python is (don’t be too harsh... I get my feelings hurt easy).
 
-I haven’t tested it in a bit. Currently swamped with Kodiak v1, one of the subsystems of the larger OLLIE Project — a long-term effort to build an open intelligence pipeline for correlating and preserving data that tends to slip through the cracks.
+I haven’t tested it in a bit. Currently swamped with Kodiak v1, the first iteration of the powerhouse behind the OLLIE Project. Which is a long-term effort to build an open intelligence pipeline for correlating and preserving data that tends to slip through the cracks.
 
 There’s likely dead code in some places. This isn’t polished. It’s ugly, and moody. And I’m definitely not a fan of Python.
 I’ll get back to it eventually. And when I do, this README will change to something *slightly* less depressing.
 
-USE AT OWN RISK
+**USE AT OWN RISK**
 
-My Python code is like a microwaveable meal: convenient, functional, and probably unhealthy if you look too close. Probably only appetizing if you're high.
-
-If you improve it, send a PR. I’ll probably merge it while sighing at Python.
-
-
-regards,
-Alex
+My Python code is like a microwaveable meal: convenient, functional, and probably unhealthy if you look too close.<br /> 
+Probably only appetizing if you're high.<br />
+<br />
+If you improve it, send a PR. I’ll probably merge it while sighing at Python.<br />
+regards,<br />
+Alex<br />
 08/Oct/2025
-
-
+<br />
+<br />
 ## ONE LAST NOTE:<br />
 I included two files:<br />
 `search_expr.py` <br />
