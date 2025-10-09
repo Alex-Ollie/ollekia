@@ -1,0 +1,130 @@
+{
+    "search_options": {
+        "fields": [
+            "identifier",
+            "title",
+            "publicdate",
+            "description"
+        ],
+        "sorts": [
+            "publicdate desc"
+        ],
+        "params": {
+            "page": 1,
+            "rows": 50,
+            "output": "json"
+        },
+        "fts": true,
+        "dls_fts": false
+    },
+    "query": {
+        "to_be": [
+            {
+                "field": "title",
+                "logic": {
+                    "and": [
+                        "GameStop",
+                        "Wallstreetbets"
+                    ],
+                    "or": [
+                        "Reddit Stocks",
+                        "Robinhood"
+                    ],
+                    "alone": []
+                }
+            },
+            {
+                "field": "description",
+                "logic": {
+                    "or": [
+                        "Robinhood",
+                        "short squeeze"
+                    ]
+                }
+            },
+            {
+                "field": "subject",
+                "logic": {
+                    "alone": [
+                        "GameStop"
+                    ]
+                }
+            },
+            {
+                "field": "language",
+                "logic": {
+                    "alone": [
+                        "eng"
+                    ]
+                }
+            },
+            {
+                "field": "mediatype",
+                "logic": {
+                    "or": [
+                        "texts",
+                        "data"
+                    ]
+                }
+            },
+            {
+                "field": "collection",
+                "logic": {
+                    "or": [
+                        "opensource",
+                        "news",
+                        "community"
+                    ]
+                }
+            },
+            {
+                "date": {
+                    "ranges": [
+                        {
+                            "to": "2021-06-30",
+                            "from": "2021-01-01"
+                        }
+                    ]
+                }
+            }
+        ],
+        "not_to_be": [
+            {
+                "field": "collection",
+                "logic": {
+                    "alone": [
+                        "etree",
+                        "software"
+                    ]
+                }
+            },
+            {
+                "field": "mediatype",
+                "logic": {
+                    "alone": [
+                        "audio"
+                    ]
+                }
+            }
+        ],
+        "groups": [
+            [
+                "title",
+                "description",
+                "subject"
+            ],
+            [
+                "language"
+            ],
+            [
+                "mediatype"
+            ],
+            [
+                "collection"
+            ],
+            [
+                "date"
+            ]
+        ]
+    }
+}
